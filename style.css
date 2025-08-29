@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4E3; /* Creme suave */
+    color: #4A235A; /* Roxo escuro para contraste */
+}
+
+/* Paleta de Cores em Tons de Vinho */
+/* Vinho escuro para cabeçalhos */
+/* Vinho médio para destaques */
+/* Vermelho vibrante para detalhes */
+/* Roxo escuro para texto */
+
+header {
+    background-color: #4A235A;
+    color: #FDFEFE;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FF5733; /* Cor vibrante para o título principal */
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 3px solid #900C3F;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #900C3F; /* Tom de vinho para subtítulos */
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container-imagem-texto {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap; /* Permite quebras de linha em telas pequenas */
+}
+
+.container-imagem-texto img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.conteudo-texto {
+    flex: 1;
+}
+
+.secao-importancia, .secao-renda {
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #581845;
+    color: #FDFEFE;
+    margin-top: 2rem;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .container-imagem-texto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-imagem-texto img {
+        max-width: 100%;
+    }
+}
